@@ -1,0 +1,56 @@
+.banner-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    background-image: url('../../Images/bg1.jpg');
+}
+.profile-picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+
+}
+.profile-picture-bg{
+    height: 92%;
+    width: 92%;
+    background-image:url('../../Images/me.png');
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.typical-role{
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+}
+.profile-picture-bg:hover{
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+.profile-details {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins SemiBold";
+    color: white;
+}
+.name{
+    color: #ff5823;
+}
+.btn-section{
+    padding: 15px;
+}
+.profile-role-tagline {
+    font-size: 19px;
+    margin: 5px 0 0;
+    font-family: "Poppins Light";
+    color: white;
+}
