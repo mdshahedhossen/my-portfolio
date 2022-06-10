@@ -26,9 +26,9 @@ const Banner = () => {
           </h1>
           </div>
           <span className="profile-role-tagline">Knack of building applications with front and back end operations.</span>
-          <div className="btn-section">
-          <button variant="outline-secondary">Hire Me</button>
-          <button variant="outline-info">Get Resume</button>
+          <div className="btn-section mt-10">
+          <button className='button button-primary hover:bg-red-300'>Hire Me</button>
+          <button className='button button-secondary ml-3'> Get Resume</button>
           </div>
         </div>
 

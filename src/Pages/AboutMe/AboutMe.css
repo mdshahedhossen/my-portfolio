@@ -1,0 +1,97 @@
+.heading-container {
+    padding-top: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
+  .screen-heading {
+    font-size: 38px;
+    color: #1f2235;
+    font-family: "Poppins Bold";
+  }.screen-sub-heading {
+    letter-spacing: 3px;
+    margin: 8px 0 10px 0;
+    font-size: 16px;
+    color: black;
+  }
+.heading-seperator{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 180px;
+    margin: 10px 0 40px 0;
+    
+}
+.seperator-line {
+    width: 100%;
+    height: 2px;
+    background-color: #1f221f;
+  }
+  .seperator-blob {
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+  .seperator-blob div {
+    width: 35px;
+    border-radius: 10px;
+    background-color:darkorange;
+  }
+  .card-p{
+      text-align: justify;
+      font-size: 18px;
+  }
+  .highlight-blob {
+    height: 12px;
+    width: 12px;
+    margin: 0 10px 0 0;
+    background-color: #ff5823;
+    border-radius: 50%;
+  }
+  .highlight {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 18px;
+}
+.highlight-header{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.aboutme-btn{
+    display: flex;
+    justify-content:center ;
+}
+.button {
+    border-radius: 50px;
+    padding: 12px 0;
+    width: 160px;
+    cursor: pointer;
+    transition: .2s;
+    font-family: "Poppins SemiBold";
+}
+
+.button-primary {
+    color: white;
+    font-size: 12px;
+    border:#1f2235;
+    background-color:#1f2235 ;
+}
+.button-primary:hover{
+  color: white;
+  font-weight: bold;
+}
+.button-secondary:hover{
+    color: white;
+    font-weight: bold;
+  }
+.button-secondary{
+    border: none;
+    color: white;
+    font-size: 12px;
+    background-color: #ff5823;
+}
