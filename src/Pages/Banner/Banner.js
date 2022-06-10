@@ -1,12 +1,13 @@
 import React from 'react';
 import Typical from 'react-typical'
 import './Banner.css'
+import bg2 from '../../Images/bg2.png'
 
 const Banner = () => {
     return (
         <section>
       <div className="banner-container">
-        <div className="b-half">
+        <div className="personal-details">
           <h2 className="profile-details">
             Hello, I'M <span className="name">Shahed</span>
           </h2>
@@ -38,6 +39,9 @@ const Banner = () => {
             </div>
         </div>
       </div>
+     <div className='bg-[#28243c]'>
+      <img src={bg2} alt="" />
+     </div>
     </section>
     );
 };
