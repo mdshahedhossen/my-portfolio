@@ -33,7 +33,7 @@ const ContactMe = () => {
           </div>
         </div>
         </div>
-      <div className="hero lg:max-h-screen bg-[#28243c] rounded-[20px] shadow-2xl">
+      <div className="hero lg:max-w-screen-lg bg-[#28243c] rounded-[20px] shadow-2xl mx-auto">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold text-white p-5">Get In Touch!</h1>

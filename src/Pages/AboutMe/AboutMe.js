@@ -2,6 +2,7 @@ import React from "react";
 import shahed from "../../Images/shahed.JPG";
 import resume from "../../Images/Md._Shahed Hossen_Resume.pdf"
 import "./AboutMe.css";
+import { Link } from "react-scroll";
 
 const AboutMe = () => {
   return (
@@ -54,7 +55,8 @@ const AboutMe = () => {
             </div>
             <div className="aboutme-btn">
               <div>
-                <button className="button button-primary">Hire Me</button>
+                <Link activeclassName="active" to="contact" spy={true} smooth={true} offset={50} duration={500}><button className="button button-primary">Hire Me</button></Link>
+                
               </div>
               <div>
               <a href={resume} download="Shahed's Resume"><button className='button button-secondary ml-3' > Get Resume</button></a>
