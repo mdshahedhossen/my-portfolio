@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import email from '../../Images/mailz.png'
 
 const ContactMe = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_cze5bzw', 'template_qwmnefw', form.current, '1oaWkvFZ8m30Cdavv')
+      .then((result) => {
+          console.log(result.text);
+          // console.log('email send')
+          toast.success('Your Message Send')
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+  };
+
   return (
     <section className="px-12 mt-20 mb-20">
         <div className="heading-container">
@@ -23,6 +42,7 @@ const ContactMe = () => {
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <div className="card-body">
+              <form ref={form} onSubmit={sendEmail}>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
@@ -30,7 +50,9 @@ const ContactMe = () => {
                 <input
                   type="text"
                   placeholder="name"
+                  name="name"
                   className="input input-bordered"
+                  required
                 />
               </div>
               <div className="form-control">
@@ -39,8 +61,10 @@ const ContactMe = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="email"
                   className="input input-bordered"
+                  required
                 />
               </div>
               <div className="form-control">
@@ -49,17 +73,21 @@ const ContactMe = () => {
                 </label>
                 <textarea
                   type="text"
+                  name="message"
                   placeholder="Message"
                   className=" input input-bordered h-32"
+                  required
                 />
               </div>
               <div className="form-control mt-6">
                 <button className="btn bg-[#28243c] hover:bg-slate-500">Send</button>
               </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };

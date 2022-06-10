@@ -2,6 +2,7 @@ import React from 'react';
 import Typical from 'react-typical'
 import './Banner.css'
 import bg2 from '../../Images/bg2.png'
+import resume from '../../Images/Md._Shahed Hossen_Resume.pdf'
 
 const Banner = () => {
     return (
@@ -28,8 +29,8 @@ const Banner = () => {
           </div>
           <span className="profile-role-tagline">Knack of building applications with front and back end operations.</span>
           <div className="btn-section mt-10">
-          <button className='button button-primary hover:bg-red-300'>Hire Me</button>
-          <button className='button button-secondary ml-3'> Get Resume</button>
+          <button className='button button-primary hover:bg-red-500'>Hire Me</button>
+          <a href={resume} download="Shahed's Resume"><button className='button button-secondary ml-3' > Get Resume</button></a>
           </div>
         </div>
 
@@ -42,6 +43,7 @@ const Banner = () => {
      <div className='bg-[#28243c]'>
       <img src={bg2} alt="" />
      </div>
+     
     </section>
     );
 };

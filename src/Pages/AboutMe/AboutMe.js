@@ -1,5 +1,6 @@
 import React from "react";
 import shahed from "../../Images/shahed.JPG";
+import resume from "../../Images/Md._Shahed Hossen_Resume.pdf"
 import "./AboutMe.css";
 
 const AboutMe = () => {
@@ -56,9 +57,7 @@ const AboutMe = () => {
                 <button className="button button-primary">Hire Me</button>
               </div>
               <div>
-                <button className="button button-secondary ml-3">
-                  Get Resume
-                </button>
+              <a href={resume} download="Shahed's Resume"><button className='button button-secondary ml-3' > Get Resume</button></a>
               </div>
             </div>
           </div>

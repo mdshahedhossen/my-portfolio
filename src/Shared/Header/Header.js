@@ -2,11 +2,11 @@ import React from 'react';
 
 const Header = () => {
     const manuItems=<>
-    <li className='text-white'><a>Home</a></li>
-    <li className='text-white'><a>AboutMe</a></li>
-    <li className='text-white'><a>Resume</a></li>
-    <li className='text-white'><a>Project</a></li>
-    <li className='text-white'><a>ContactMe</a></li>
+    <li className='text-white'><a href='home#home'>Home</a></li>
+    <li className='text-white'><a href='#aboutme'>AboutMe</a></li>
+    <li className='text-white'><a href='#resume'>Resume</a></li>
+    <li className='text-white'><a href='#project'>Project</a></li>
+    <li className='text-white'><a href='#contact'>ContactMe</a></li>
     </>
     return (
         <div className="navbar bg-[#28243c] p-12">
