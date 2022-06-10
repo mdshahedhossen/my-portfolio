@@ -22,7 +22,7 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="px-12 mt-20 mb-20">
+    <section className="px-12 mt-20 mb-20" id="contact">
         <div className="heading-container">
         <h1 className="screen-heading font-bold text-[32px]">Contact Me</h1>
         <span className="screen-sub-heading">Lets Keep In Touch</span>

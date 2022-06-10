@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Header = () => {
     const manuItems=<>
-    <li className='text-white'><a href='home#home'>Home</a></li>
-    <li className='text-white'><a href='#aboutme'>AboutMe</a></li>
-    <li className='text-white'><a href='#resume'>Resume</a></li>
-    <li className='text-white'><a href='#project'>Project</a></li>
-    <li className='text-white'><a href='#contact'>ContactMe</a></li>
+    <li className='text-white font-bold'><Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>Home</Link></li>
+    <li className='text-white font-bold'><Link activeClass="active" to="aboutme" spy={true} smooth={true} offset={50} duration={500}>AboutMe</Link></li>
+    <li className='text-white font-bold'><Link activeClass="active" to="resume" spy={true} smooth={true} offset={50} duration={500}>Resume</Link></li>
+    <li className='text-white font-bold'><Link activeClass="active" to="project" spy={true} smooth={true} offset={50} duration={500}>Project</Link></li>
+    <li className='text-white font-bold'><Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>ContactMe</Link></li>
     </>
     return (
         <div className="navbar bg-[#28243c] p-12">

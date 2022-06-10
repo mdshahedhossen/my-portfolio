@@ -3,6 +3,7 @@ import AboutMe from '../AboutMe/AboutMe';
 import Banner from '../Banner/Banner';
 import ContactMe from '../ContactMe/ContactMe';
 import MyServices from '../MyServices';
+import Projsect from '../Projsect';
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <MyServices></MyServices>
             <AboutMe></AboutMe>
+            <Projsect></Projsect>
             <ContactMe></ContactMe>
         </div>
     );
